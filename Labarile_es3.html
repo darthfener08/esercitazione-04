@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserimento Auto</title>
+    <style>
+        
+        body {
+            font-family: Verdana, geneva, Tahoma, sans-serif;
+        }
+
+        table th {
+            background-color: lightblue;
+            width: 225px;
+            text-align: left;
+            vertical-align: top;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div align="center">
+        <h2>------------- Inserimento Auto -------------
+        </h2>
+    </div>
+
+    <form action="es3.php" method="post">
+        <table >
+            <tr>
+                <th>Marca</th>
+                <td>
+                    <select name="marca" id="marca">
+                        <option value="Alfa Romeo">Alfa Romeo</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Tesla">Tesla</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Modello</th>
+                <td><input type="text" name="modello"></td>
+            </tr>
+            <tr>
+                <th>Stato</th>
+                <td>
+                    <input type="radio" name="stato" id="nuova" value="Nuova"> Nuova 
+                    <input type="radio" name="stato" id="usata" value="Usata"> Usata
+                </td>
+            </tr>
+            
+            <tr>
+                <th>Anno Costruzione</th>
+                <td>
+                    <select name="anno" id="anno">
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Cilindrata</th>
+                <td><input type="number" name="cilindrata"></td>
+            </tr>
+            <tr>
+                <th>Cavalli</th>
+                <td><input type="number" name="cavalli"></td>
+            </tr>
+            <tr>
+                <th>Prezzo</th>
+                <td><input type="number" name="prezzo"> Euro</td>
+            </tr>
+            <tr>
+                <th>Targa</th>
+                <td><input type="text" name="targa"></td>
+            </tr>
+            <tr>
+                <th style="vertical-align: top;">Accessori</th>
+                <td>
+                    <input type="checkbox" name="Aria" value="Aria_Condizionata"> Aria Condizionata<br>
+                    <input type="checkbox" name="Vernice" value="Vernice_Metallizzata"> Vernice Metallizzata<br>
+                    <input type="checkbox" name="Cristallo" value="Tetto_in_Cristallo"> Tetto in Cristallo<br>
+                    <input type="checkbox" name="Radio-CD" value="Impianto_Radio-CD"> Impianto Radio-CD 
+                </td>
+            </tr>
+            
+            <tr>
+                <th>Descrizione Aggiuntiva</th>
+                <td>
+                    <textarea name="descrizione" ></textarea>
+                </td>
+            </tr>
+        </table> 
+        
+        <br>
+        <div>
+            <button type="submit" value="Invia">Invia</button>
+            <button type="reset" value="Cancella">Cancella</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
